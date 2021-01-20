@@ -5,6 +5,7 @@ body {
 	margin: 0;
 	font-family: "Dosis", sans-serif;
 	scroll-behavior: smooth;
+	scroll-snap-type: y proximity;
 }
 
 a {
@@ -24,6 +25,9 @@ a {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	padding: 2rem;
+	text-align: center;
+	scroll-snap-align: center;
 }
 
 .container > h1 {
