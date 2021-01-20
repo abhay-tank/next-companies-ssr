@@ -1,0 +1,20 @@
+[
+	{
+		"id": "surfboard_k3y2J4HB_K",
+		"title": "Surfboard",
+		"logoURL": "https://res.cloudinary.com/feather-blogs/image/upload/v1611168251/Companies-SSR/Navbar/surf_zipifh.svg",
+		"URL": "/"
+	},
+	{
+		"id": "raw_xVTfVglZBg",
+		"title": "Raw",
+		"logoURL": "https://res.cloudinary.com/feather-blogs/image/upload/v1611168252/Companies-SSR/Navbar/raweng_icon_black_400x400_fjq2so.png",
+		"URL": "/raweng"
+	},
+	{
+		"id": "cs_6LNXarjxbK",
+		"title": "Contentstack",
+		"logoURL": "https://res.cloudinary.com/feather-blogs/image/upload/v1611168251/Companies-SSR/Navbar/contentstack_sow4co.jpg",
+		"URL": "/contentstack"
+	}
+]

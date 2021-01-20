@@ -1,0 +1,34 @@
+{
+	"id": "surfboard_k3y2J4HB_K",
+	"title": "Surfboard Ventures",
+	"logoURL": "https://res.cloudinary.com/feather-blogs/image/upload/v1611162694/Companies-SSR/Surfboard/surfboard-logo-square_mx0uqt.gif",
+	"companyName": "Surfboard Ventures",
+	"companyTagline": "Surf with us on board🏄🏻.",
+	"backgroundColor": "#86D0DD",
+	"sections": [
+		{
+			"sectionId": "aRH9PuYiyT",
+			"title": "Lock and Roll",
+			"subtitle": "Surfboard Ventures provides every entrepreneur with the tools and resources they need to master the tides or just keep paddling smoothly.",
+			"bannerImageURL": "https://res.cloudinary.com/feather-blogs/image/upload/v1611162688/Companies-SSR/Surfboard/lockandroll_gasl9y.gif",
+			"backgroundColor": "#FFD86E",
+			"fontColor": "#5B374E"
+		},
+		{
+			"sectionId": "3cZAOe8Pup",
+			"title": "Limitless",
+			"subtitle": "We are a powerhouse of energetic, ambitious, and helpful people working endlessly towards goals. Not being limited to this, we also make time for play and team-building activities. Browse through this awesome gallery to know more.",
+			"bannerImageURL": "https://res.cloudinary.com/feather-blogs/image/upload/v1611161050/Companies-SSR/Surfboard/giphy_eatl7v.gif",
+			"backgroundColor": "#99FFFF",
+			"fontColor": "#663366"
+		},
+		{
+			"sectionId": "O2MD8BnGea",
+			"title": "Already surfing with us.",
+			"subtitle": "It has been trusted for more than a decade by the world’s most innovative startups, sports franchises and leading Fortune 500 companies for Web, Mobile and DevOps solutions and services.",
+			"bannerImageURL": "https://res.cloudinary.com/feather-blogs/image/upload/v1611162684/Companies-SSR/Surfboard/surfed_q7x0oi.gif",
+			"backgroundColor": "#5DC0FF",
+			"fontColor": "#4A4A4A"
+		}
+	]
+}

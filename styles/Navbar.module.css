@@ -1,0 +1,28 @@
+.navbarContainer {
+	z-index: 99;
+	position: fixed;
+	top: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.navLink {
+	cursor: pointer;
+	margin: 1rem;
+	border-radius: 50%;
+	display: inherit;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 5px 5px 5px #aaaaaa;
+	transition: 300ms;
+}
+
+.navLink:hover {
+	transform: scale(1.05);
+}
+
+.linkImage {
+	border-radius: 50%;
+}
