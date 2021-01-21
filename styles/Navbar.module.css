@@ -15,7 +15,7 @@
 	display: inherit;
 	align-items: center;
 	justify-content: center;
-	box-shadow: 5px 5px 5px #aaaaaa;
+	box-shadow: 5px 5px 5px #1b1b1b8a;
 	transition: 300ms;
 }
 

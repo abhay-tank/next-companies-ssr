@@ -31,7 +31,7 @@ a {
 }
 
 .container > h1 {
-	font-size: 6vw;
+	font-size: 5vw;
 	font-family: "Poiret One", cursive;
 }
 .container > h3 {
@@ -39,12 +39,14 @@ a {
 }
 
 h1 {
+	padding: 0;
+	margin: 0;
 	font-size: 5vw;
 	font-weight: normal;
 }
 
 h3 {
-	font-size: 2vw;
+	font-size: 3vw;
 	font-weight: normal;
 }
 
@@ -73,4 +75,49 @@ h3 {
 
 .section > .col {
 	width: 50%;
+}
+
+.btnContainer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin: 2rem;
+	text-align: center;
+}
+
+.btnContainer > .btn {
+	all: inherit;
+}
+
+.companyLink {
+	cursor: pointer;
+	margin: 0 1rem;
+	padding: 0 1rem;
+	border-radius: 2rem;
+	box-shadow: 3px 3px 5px #1b1b1b8a;
+	display: inherit;
+	align-items: center;
+	justify-content: space-evenly;
+	transition: 300ms;
+}
+
+.companyLink:hover {
+	box-shadow: 6px 6px 5px #1b1b1b8a;
+}
+
+@media screen and (max-width: 600px) {
+	.section,
+	.btnContainer {
+		flex-direction: column;
+	}
+	.companyLink {
+		margin: 1rem;
+	}
+	.section > .col {
+		width: 100%;
+	}
+	.section:nth-child(even) {
+		flex-direction: column;
+	}
 }

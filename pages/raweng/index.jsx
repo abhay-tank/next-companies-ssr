@@ -1,9 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
-import Link from "next/link";
-import fetchData from "../helper/fetchData";
-import Navbar from "../components/Navbar/Navbar";
-export default function Home(props) {
+import fetchData from "../../helper/fetchData";
+import Navbar from "../../components/Navbar/Navbar";
+export default function RawEngineering(props) {
 	if (props.hasError) {
 		return <h1>Error loading page</h1>;
 	} else {
@@ -12,8 +11,9 @@ export default function Home(props) {
 			title,
 			logoURL,
 			companyName,
-			companyLinks,
+			companyTagline,
 			backgroundColor,
+			fontColor,
 			sections,
 		} = props.data;
 		return (
@@ -23,36 +23,14 @@ export default function Home(props) {
 					<link rel="shortcut icon" type="image/x-icon" href={`/${id}.ico`} />
 				</Head>
 				<Navbar />
-				<div className="container" style={{ backgroundColor: backgroundColor }}>
-					<Image src={logoURL} height="300" width="300" alt="logoImage" />
-					<h1>{companyName}</h1>
-					<div className="btnContainer">
-						{companyLinks.map((company) => {
-							return (
-								<Link
-									key={company.companyId}
-									href={company.URL}
-									className="btn"
-								>
-									<div
-										className="companyLink"
-										style={{
-											color: company.fontColor,
-											backgroundColor: company.backgroundColor,
-										}}
-									>
-										<Image
-											className="linkLogoImage"
-											src={company.logoURL}
-											height="30"
-											width="30"
-											alt="companyLogoImage"
-										/>
-										<p className="linkText">{company.companyName}</p>
-									</div>
-								</Link>
-							);
-						})}
+				<div
+					className="container section"
+					style={{ backgroundColor: backgroundColor, color: fontColor }}
+				>
+					<Image src={logoURL} height="300" width="600" alt="logoImage" />
+					<div>
+						<h1>{companyName}</h1>
+						<h3>{companyTagline}</h3>
 					</div>
 				</div>
 				{sections.map((section) => {
@@ -69,7 +47,7 @@ export default function Home(props) {
 								<Image
 									src={section.bannerImageURL}
 									height="500"
-									width="500"
+									width="600"
 									alt="bannerImage"
 								/>
 							</div>
@@ -86,7 +64,7 @@ export default function Home(props) {
 }
 
 export const getStaticProps = async (context) => {
-	const url = "https://abhay-tank.github.io/json-server/surfboardData.json";
+	const url = "https://abhay-tank.github.io/json-server/rawengData.json";
 	const data = await fetchData(url);
 	if (data instanceof Error) {
 		return {

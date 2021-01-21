@@ -35,6 +35,7 @@ function Navbar(props) {
 									width="60"
 									src={link.logoURL}
 									alt={link.title}
+									title={link.title}
 								/>
 							</div>
 						</Link>
